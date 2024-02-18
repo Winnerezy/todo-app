@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    /* background-image:url(/images/737474.png); */
+    background-size: cover;
+
+    color: black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+main{
+    margin-top: 50px;
+}
+#addTask{
+    width: 400px;
+    height: 30px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+#add, #retrieve{
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    box-shadow: 4px 4px 5px rgb(85, 85, 85, 0.65);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#taskList{
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    list-style-type:square;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+li{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: start;
+    flex: 1;
+}
+
+li >button{
+    margin-left: 20px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(6px 5px 3px rgb(124, 124, 124, 0.2));
+}
+@media screen and (max-width: 600px) {
+    main{
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
