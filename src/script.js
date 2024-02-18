@@ -63,5 +63,12 @@ retrieve.addEventListener('click', (arrayList) => {
        oneElement.appendChild(delBtn);
        delBtn.textContent = "Delete"
 
+      
     }
 )});
+
+const clear = document.getElementById("clear");
+clear.addEventListener('click', () =>{
+    localStorage.clear();
+});
+
